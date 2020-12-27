@@ -1,0 +1,12 @@
+.sideBar {
+  --padding: 8px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: calc(320px - var(--padding) * 2);
+  padding: var(--padding);
+  background-color: #0e5ca5;
+  color: white;
+}
