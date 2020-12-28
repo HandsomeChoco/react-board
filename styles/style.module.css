@@ -1,12 +1,46 @@
 .sideBar {
   --padding: 8px;
 
+  overflow: hidden;
   position: absolute;
   left: 0;
   top: 0;
+
   height: 100vh;
   width: calc(320px - var(--padding) * 2);
   padding: var(--padding);
-  background-color: #0e5ca5;
+
+  background-color: #094d8d;
   color: white;
+
+  transition: 0.3s;
+}
+
+.closeSideBarIcon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sideBar > div > svg {
+  font-size: 25px;
+}
+
+.headerBar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  top: 0;
+  width: 100vw;
+  height: 56px;
+  padding: 0 16px;
+
+  background-color: #303030;
+  color: white;
+}
+
+.headerBar > svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
 }
