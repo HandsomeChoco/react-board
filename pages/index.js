@@ -1,5 +1,12 @@
+import '../components/Container';
+import Container from '../components/Container';
+
 function Home() {
-  return <div>This is react Board index page</div>;
+  return (
+    <div>
+      <Container></Container>
+    </div>
+  );
 }
 
 export default Home;
