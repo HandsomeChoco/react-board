@@ -56,6 +56,7 @@ function TopBar() {
           title={logo.title}
         />
       ))}
+      <input type="search" placeholder="검색" className={style.sideBarSearch} />
     </header>
   );
 }
