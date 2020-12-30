@@ -4,6 +4,8 @@ const initialState = {
   ui: {
     sideBar: {
       visible: false,
+      sideBarBgColor: '#3c3c3c',
+      sideBarTextColor: '#ffffff',
     },
   },
 };
