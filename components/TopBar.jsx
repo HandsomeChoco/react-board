@@ -1,9 +1,10 @@
 import style from '../styles/style.module.css';
 import { FaBars } from 'react-icons/fa';
 import Image from 'next/image';
-
+import { useGlobalState, useGlobalDispatch } from '../reducer/GlobalContext';
 const imgs = [
   {
+    id: 1,
     src: '/nextjs-logo.svg',
     width: 90,
     height: 50,
@@ -11,6 +12,7 @@ const imgs = [
     title: '리액트 서버 사이드 렌더링 프레임워크 입니다.',
   },
   {
+    id: 2,
     src: '/react-logo.svg',
     width: 60,
     height: 50,
@@ -18,6 +20,7 @@ const imgs = [
     title: 'SPA 제작 프론트엔드 라이브러리 입니다.',
   },
   {
+    id: 3,
     src: '/nodejs-logo.svg',
     width: 100,
     height: 50,
@@ -31,12 +34,20 @@ function Logo({ src, width, height, alt, title }) {
     <Image src={src} width={width} height={height} alt={alt} title={title} />
   );
 }
+
 function TopBar() {
+  const state = useGlobalState();
+  const dispatch = useGlobalDispatch();
   return (
     <header className={style.headerBar}>
-      <FaBars />
+      <FaBars
+        onClick={() => {
+          dispatch({ type: 'ON_TOGGLE_SIDEBAR' });
+        }}
+      />
       {imgs.map((logo) => (
         <Logo
+          key={logo.id}
           src={logo.src}
           width={logo.width}
           height={logo.height}
