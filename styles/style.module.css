@@ -10,7 +10,7 @@
   width: calc(320px - var(--padding) * 2);
   padding: var(--padding);
 
-  background-color: #094d8d;
+  background-color: #3c3c3c;
   color: white;
 
   transition: 0.3s;
