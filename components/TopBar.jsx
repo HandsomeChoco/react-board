@@ -9,7 +9,8 @@ const imgs = [
     width: 90,
     height: 50,
     alt: 'Next.js',
-    title: '리액트 서버 사이드 렌더링 프레임워크 입니다.',
+    /* prettier-ignore */
+    title: '리액트 서버 사이드 렌더링과 라우팅을 간편하게 할 수 있는 프레임워크 입니다.',
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ const imgs = [
     width: 60,
     height: 50,
     alt: 'React.js',
-    title: 'SPA 제작 프론트엔드 라이브러리 입니다.',
+    title: 'SPA 라이브러리 입니다.',
   },
   {
     id: 3,
@@ -25,7 +26,7 @@ const imgs = [
     width: 100,
     height: 50,
     alt: 'Node.js',
-    title: '크로미움 V8 자바스크립트 런타임 입니다.',
+    title: '크로미움 V8 엔진 기반 자바스크립트 런타임 환경 입니다.',
   },
 ];
 
