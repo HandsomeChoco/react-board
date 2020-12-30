@@ -3,6 +3,7 @@
 
   overflow: hidden;
   position: absolute;
+
   left: 0;
   top: 0;
 
@@ -19,18 +20,24 @@
 .closeSideBarIcon {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 16px;
 }
 
 .sideBar > div > svg {
   font-size: 25px;
 }
 
+.sideBarSearch {
+  border: 0px none;
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+}
+
 .headerBar {
   display: flex;
   align-items: center;
-  position: absolute;
 
-  top: 0;
   width: 100vw;
   height: 56px;
   padding: 0 16px;
@@ -43,4 +50,10 @@
   width: 25px;
   height: 25px;
   margin-right: 16px;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 8px;
 }
