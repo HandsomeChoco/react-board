@@ -7,7 +7,7 @@
   left: 0;
   top: 0;
 
-  height: 100vh;
+  height: calc(100vh - var(--padding) * 2);
   width: calc(320px - var(--padding) * 2);
   padding: var(--padding);
 
@@ -15,6 +15,10 @@
   color: white;
 
   transition: 0.3s;
+}
+.hiddenSideBar {
+  width: 0px;
+  padding: 0px;
 }
 
 .closeSideBarIcon {
