@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
 
-  width: 100vw;
+  width: calc(100vw - 32px);
   height: 56px;
   padding: 0 16px;
 
@@ -55,5 +55,11 @@
 .container {
   display: flex;
   flex-flow: column nowrap;
+  padding: 8px;
+}
+
+.boardItem {
+  border: 2px solid black;
+  border-radius: 8px;
   padding: 8px;
 }

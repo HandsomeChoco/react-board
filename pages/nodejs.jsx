@@ -1,7 +1,7 @@
 import Container from '../components/Container';
 
-import TextTitle from '../components/TextTitle';
 import Block from '../components/Block';
+import TextTitle from '../components/TextTitle';
 
 function Nodejs() {
   return (

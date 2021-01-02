@@ -1,3 +1,4 @@
+import Container from '../components/Container';
 import Layout from '../components/Layout';
 import SideBar from '../components/SideBar';
 import TopBar from '../components/TopBar';
@@ -10,7 +11,9 @@ function App({ Component, pageProps }) {
       <Layout>
         <TopBar />
         <SideBar />
-        <Component {...pageProps} />
+        <Container>
+          <Component {...pageProps} />
+        </Container>
       </Layout>
     </GlobalContextProvider>
   );

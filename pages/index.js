@@ -1,12 +1,26 @@
-import '../components/Container';
-import Container from '../components/Container';
+import Block from '../components/Block';
+import BoardItem from '../components/BoardItem';
+import TextTitle from '../components/TextTitle';
 
-function Home() {
+const arr = [
+  {
+    text: '123',
+  },
+  {
+    text: '456',
+  },
+  {
+    text: '789',
+  },
+];
+
+function Index() {
   return (
-    <div>
-      <Container></Container>
-    </div>
+    <Block>
+      <TextTitle tag="h2" text="최신 글" />
+      <BoardItem arr={arr} />
+    </Block>
   );
 }
 
-export default Home;
+export default Index;
