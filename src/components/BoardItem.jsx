@@ -1,4 +1,4 @@
-import style from '../styles/style.module.css';
+import style from '../../styles/style.module.css';
 
 function Item({ text }) {
   return <li>{text}</li>;

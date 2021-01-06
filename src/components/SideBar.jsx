@@ -1,4 +1,4 @@
-import style from '../styles/style.module.css';
+import style from '../../styles/style.module.css';
 import { IoMdClose } from 'react-icons/io';
 import { useGlobalState, useGlobalDispatch } from '../reducer/GlobalContext';
 

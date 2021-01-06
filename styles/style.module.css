@@ -66,4 +66,29 @@
   border: 2px solid black;
   border-radius: 8px;
   padding: 8px;
+  margin-bottom: 8px;
+}
+
+.boardItem > li {
+  padding: 4px 0px;
+}
+
+.boardItem > li:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.wrapper {
+  justify-content: space-around;
+}
+
+.wrapper > .board {
+  flex-basis: 33.3%;
+}
+
+.wrapper > .board:nth-last-child(1) {
+  padding-left: 8px;
+}
+
+.wrapper > .board:nth-last-child(3) {
+  padding-right: 8px;
 }

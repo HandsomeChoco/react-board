@@ -1,4 +1,4 @@
-import style from '../styles/style.module.css';
+import style from '../../styles/style.module.css';
 import { FaBars } from 'react-icons/fa';
 import { BiUserCircle } from 'react-icons/bi';
 import Image from 'next/image';
