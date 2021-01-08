@@ -49,26 +49,35 @@ function TopBar() {
   const dispatch = useGlobalDispatch();
   return (
     <header className={style.headerBar}>
-      <FaBars
-        onClick={() => {
-          dispatch({ type: 'ON_TOGGLE_SIDEBAR' });
-        }}
-      />
-      {imgs.map((logo) => (
-        <Link href={logo.href} key={logo.id}>
-          <a>
-            <Logo
-              src={logo.src}
-              width={logo.width}
-              height={logo.height}
-              alt={logo.alt}
-              title={logo.title}
-            />
-          </a>
-        </Link>
-      ))}
-      <input type="search" placeholder="검색" className={style.sideBarSearch} />
-      <BiUserCircle />
+      <div>
+        <FaBars
+          className={`${style.icon} ${style.faBars}`}
+          onClick={() => {
+            dispatch({ type: 'ON_TOGGLE_SIDEBAR' });
+          }}
+        />
+        {imgs.map((logo) => (
+          <Link href={logo.href} key={logo.id}>
+            <a>
+              <Logo
+                src={logo.src}
+                width={logo.width}
+                height={logo.height}
+                alt={logo.alt}
+                title={logo.title}
+              />
+            </a>
+          </Link>
+        ))}
+      </div>
+      <div>
+        <input
+          type="search"
+          placeholder="검색"
+          className={style.sideBarSearch}
+        />
+        <BiUserCircle className={`${style.icon} ${style.biUserCircle}`} />
+      </div>
     </header>
   );
 }
