@@ -80,7 +80,8 @@
 }
 
 .boardItem > li {
-  padding: 4px 0px;
+  padding: 4px;
+  list-style: none;
 }
 
 .boardItem > li:nth-child(odd) {
@@ -108,4 +109,8 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.hello {
+  font-size: 50px;
 }

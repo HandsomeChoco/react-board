@@ -2,6 +2,7 @@ import Link from 'next/link';
 import style from '../../styles/style.module.css';
 
 function Item({ text, src }) {
+  console.log(src.replace(/^[http://|https://]/, ''));
   return (
     <li>
       <Link href={src}>
