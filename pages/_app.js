@@ -7,15 +7,17 @@ import '../styles/globals.css';
 
 function App({ Component, pageProps }) {
   return (
-    <GlobalContextProvider>
-      <Layout>
-        <TopBar />
-        <SideBar />
-        <Container>
-          <Component {...pageProps} />
-        </Container>
-      </Layout>
-    </GlobalContextProvider>
+    <>
+      <GlobalContextProvider>
+        <Layout>
+          <TopBar />
+          <SideBar />
+          <Container>
+            <Component {...pageProps} />
+          </Container>
+        </Layout>
+      </GlobalContextProvider>
+    </>
   );
 }
 
