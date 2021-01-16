@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import Block from '../src/components/Block';
 
-const Editor = dynamic(() => import('../src/components/Draft'), {
+const Wysiwyg = dynamic(() => import('../src/components/Editor'), {
   loading: () => <div>loading...</div>,
   ssr: false,
 });
@@ -9,7 +9,7 @@ const Editor = dynamic(() => import('../src/components/Draft'), {
 function Write() {
   return (
     <Block>
-      <Editor />
+      <Wysiwyg />
     </Block>
   );
 }
